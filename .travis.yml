@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t 1123faisal/dockerdemo -f Dockerfile.dev
+  - docker build -t 1123faisal/dockerdemo -f Dockerfile.dev .
 
 scripts:
   - docker run 1123faisal/dockerdemo npm run test -- --coverage
